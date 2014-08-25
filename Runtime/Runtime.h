@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 CocoaFlow. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for Runtime.
 FOUNDATION_EXPORT double RuntimeVersionNumber;
