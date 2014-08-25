@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DA3F4B6B19A9144200F6F19C /* Runtime.h in Headers */ = {isa = PBXBuildFile; fileRef = DA3F4B6A19A9144200F6F19C /* Runtime.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA3F4B7519A9144200F6F19C /* RuntimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4B7419A9144200F6F19C /* RuntimeTests.swift */; };
 		DA3F4B9D19A9175C00F6F19C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3F4B9A19A9172F00F6F19C /* Nimble.framework */; };
 		DA3F4B9E19A9175C00F6F19C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3F4B8719A9171200F6F19C /* Quick.framework */; };
 /* End PBXBuildFile section */
@@ -78,7 +77,6 @@
 		DA3F4B6A19A9144200F6F19C /* Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Runtime.h; sourceTree = "<group>"; };
 		DA3F4B7019A9144200F6F19C /* RuntimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuntimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3F4B7319A9144200F6F19C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA3F4B7419A9144200F6F19C /* RuntimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeTests.swift; sourceTree = "<group>"; };
 		DA3F4B7E19A9171100F6F19C /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = External/Quick/Quick/Quick.xcodeproj; sourceTree = SOURCE_ROOT; };
 		DA3F4B8E19A9172E00F6F19C /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = External/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -143,7 +141,6 @@
 			children = (
 				DA3F4B8E19A9172E00F6F19C /* Nimble.xcodeproj */,
 				DA3F4B7E19A9171100F6F19C /* Quick.xcodeproj */,
-				DA3F4B7419A9144200F6F19C /* RuntimeTests.swift */,
 				DA3F4B7219A9144200F6F19C /* Supporting Files */,
 			);
 			path = RuntimeTests;
@@ -361,7 +358,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA3F4B7519A9144200F6F19C /* RuntimeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
