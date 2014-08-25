@@ -69,6 +69,13 @@
 			remoteGlobalIDString = 1F925EB7195C0D6300ED456B;
 			remoteInfo = "Nimble-OSXTests";
 		};
+		DAEDCD9219AAD007008132BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA3F4B5C19A9144200F6F19C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA3F4B6419A9144200F6F19C;
+			remoteInfo = Runtime;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -219,6 +226,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DAEDCD9319AAD007008132BB /* PBXTargetDependency */,
 			);
 			name = RuntimeTests;
 			productName = RuntimeTests;
@@ -358,10 +366,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3F4BBF19A93A2200F6F19C /* RuntimeSpec.swift in Sources */,
+				DA3F4BB119A92CAA00F6F19C /* MessageSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAEDCD9319AAD007008132BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA3F4B6419A9144200F6F19C /* Runtime */;
+			targetProxy = DAEDCD9219AAD007008132BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		DA3F4B7619A9144200F6F19C /* Debug */ = {
