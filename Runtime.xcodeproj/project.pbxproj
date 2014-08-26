@@ -12,6 +12,8 @@
 		DA3F4B9E19A9175C00F6F19C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3F4B8719A9171200F6F19C /* Quick.framework */; };
 		DAEDCDDD19AAD88D008132BB /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3F4B9619A9172F00F6F19C /* Nimble.framework */; };
 		DAEDCDDE19AAD88D008132BB /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3F4B8719A9171200F6F19C /* Quick.framework */; };
+		DAFF398F19AC2D68006C69A2 /* JSONLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFF398019AC2CEA006C69A2 /* JSONLib.framework */; };
+		DAFF399019AC2D74006C69A2 /* JSONLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFF398019AC2CEA006C69A2 /* JSONLib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,34 @@
 			remoteGlobalIDString = DAEDCDB419AAD40C008132BB;
 			remoteInfo = "Runtime-iOS";
 		};
+		DAFF397F19AC2CEA006C69A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFF397819AC2CEA006C69A2 /* JSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7D7BD7C2195418CB00AC2E4E;
+			remoteInfo = "JSON-OSX";
+		};
+		DAFF398119AC2CEA006C69A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFF397819AC2CEA006C69A2 /* JSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7D7BD7CD195418CC00AC2E4E;
+			remoteInfo = "JSON-OSXTests";
+		};
+		DAFF398319AC2CEA006C69A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFF397819AC2CEA006C69A2 /* JSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7D1E362F199478A600856119;
+			remoteInfo = "JSON-iOS";
+		};
+		DAFF398519AC2CEA006C69A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFF397819AC2CEA006C69A2 /* JSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7D1E3639199478A600856119;
+			remoteInfo = "JSON-iOSTests";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -105,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAFF399019AC2D74006C69A2 /* JSONLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAFF398F19AC2D68006C69A2 /* JSONLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +191,7 @@
 		DA3F4B6719A9144200F6F19C /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
+				DAFF397819AC2CEA006C69A2 /* JSON.xcodeproj */,
 				DA3F4B6A19A9144200F6F19C /* Runtime.h */,
 				DA3F4B6819A9144200F6F19C /* Supporting Files */,
 			);
@@ -209,6 +242,17 @@
 				DA3F4B9819A9172F00F6F19C /* NimbleTests.xctest */,
 				DA3F4B9A19A9172F00F6F19C /* Nimble.framework */,
 				DA3F4B9C19A9172F00F6F19C /* Nimble-OSXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAFF397919AC2CEA006C69A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAFF398019AC2CEA006C69A2 /* JSONLib.framework */,
+				DAFF398219AC2CEA006C69A2 /* JSON-OSXTests.xctest */,
+				DAFF398419AC2CEA006C69A2 /* JSONLib.framework */,
+				DAFF398619AC2CEA006C69A2 /* JSON-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -341,6 +385,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = DAFF397919AC2CEA006C69A2 /* Products */;
+					ProjectRef = DAFF397819AC2CEA006C69A2 /* JSON.xcodeproj */;
+				},
+				{
 					ProductGroup = DA3F4B8F19A9172E00F6F19C /* Products */;
 					ProjectRef = DA3F4B8E19A9172E00F6F19C /* Nimble.xcodeproj */;
 				},
@@ -414,6 +462,34 @@
 			fileType = wrapper.cfbundle;
 			path = "Nimble-OSXTests.xctest";
 			remoteRef = DA3F4B9B19A9172F00F6F19C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DAFF398019AC2CEA006C69A2 /* JSONLib.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSONLib.framework;
+			remoteRef = DAFF397F19AC2CEA006C69A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DAFF398219AC2CEA006C69A2 /* JSON-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "JSON-OSXTests.xctest";
+			remoteRef = DAFF398119AC2CEA006C69A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DAFF398419AC2CEA006C69A2 /* JSONLib.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSONLib.framework;
+			remoteRef = DAFF398319AC2CEA006C69A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DAFF398619AC2CEA006C69A2 /* JSON-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "JSON-iOSTests.xctest";
+			remoteRef = DAFF398519AC2CEA006C69A2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
