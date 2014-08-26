@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA3BB48219AC371C0022BDBA /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4BAA19A921EF00F6F19C /* Runtime.swift */; };
+		DA3BB48319AC371C0022BDBA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4BB219A92E7600F6F19C /* Message.swift */; };
+		DA3BB48419AC371C0022BDBA /* MessageChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4BB419A932B500F6F19C /* MessageChannel.swift */; };
+		DA3BB48519AC371C0022BDBA /* MessageTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4BB619A9340900F6F19C /* MessageTopic.swift */; };
+		DA3BB48619AC371C0022BDBA /* ChannelName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4BB819A934A000F6F19C /* ChannelName.swift */; };
+		DA3BB48719AC371C0022BDBA /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4BBA19A9391A00F6F19C /* Transport.swift */; };
+		DA3BB49519AC37230022BDBA /* RuntimeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4BBE19A93A2200F6F19C /* RuntimeSpec.swift */; };
+		DA3BB49719AC37230022BDBA /* FakeTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDCE0819AAEC12008132BB /* FakeTransport.swift */; };
+		DA3BB49819AC37290022BDBA /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4BAA19A921EF00F6F19C /* Runtime.swift */; };
+		DA3BB49919AC37290022BDBA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4BB219A92E7600F6F19C /* Message.swift */; };
+		DA3BB49A19AC37290022BDBA /* MessageChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4BB419A932B500F6F19C /* MessageChannel.swift */; };
+		DA3BB49B19AC37290022BDBA /* MessageTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4BB619A9340900F6F19C /* MessageTopic.swift */; };
+		DA3BB49C19AC37290022BDBA /* ChannelName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4BB819A934A000F6F19C /* ChannelName.swift */; };
+		DA3BB49D19AC37290022BDBA /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4BBA19A9391A00F6F19C /* Transport.swift */; };
+		DA3BB49F19AC372F0022BDBA /* RuntimeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4BBE19A93A2200F6F19C /* RuntimeSpec.swift */; };
+		DA3BB4A119AC372F0022BDBA /* FakeTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDCE0819AAEC12008132BB /* FakeTransport.swift */; };
 		DA3F4B6B19A9144200F6F19C /* Runtime.h in Headers */ = {isa = PBXBuildFile; fileRef = DA3F4B6A19A9144200F6F19C /* Runtime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA3F4B9D19A9175C00F6F19C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3F4B9A19A9172F00F6F19C /* Nimble.framework */; };
 		DA3F4B9E19A9175C00F6F19C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3F4B8719A9171200F6F19C /* Quick.framework */; };
@@ -125,8 +141,16 @@
 		DA3F4B7319A9144200F6F19C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA3F4B7E19A9171100F6F19C /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = External/Quick/Quick/Quick.xcodeproj; sourceTree = SOURCE_ROOT; };
 		DA3F4B8E19A9172E00F6F19C /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = External/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
+		DA3F4BAA19A921EF00F6F19C /* Runtime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Runtime.swift; sourceTree = "<group>"; };
+		DA3F4BB219A92E7600F6F19C /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		DA3F4BB419A932B500F6F19C /* MessageChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageChannel.swift; sourceTree = "<group>"; };
+		DA3F4BB619A9340900F6F19C /* MessageTopic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTopic.swift; sourceTree = "<group>"; };
+		DA3F4BB819A934A000F6F19C /* ChannelName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelName.swift; sourceTree = "<group>"; };
+		DA3F4BBA19A9391A00F6F19C /* Transport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
+		DA3F4BBE19A93A2200F6F19C /* RuntimeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuntimeSpec.swift; sourceTree = "<group>"; };
 		DAEDCDB519AAD40C008132BB /* Runtime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Runtime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAEDCDBF19AAD40C008132BB /* Runtime-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Runtime-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAEDCE0819AAEC12008132BB /* FakeTransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeTransport.swift; sourceTree = "<group>"; };
 		DAFF397819AC2CEA006C69A2 /* JSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSON.xcodeproj; path = "External/json-swift/JSON.xcodeproj"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -194,6 +218,12 @@
 				DAFF397819AC2CEA006C69A2 /* JSON.xcodeproj */,
 				DA3F4B6A19A9144200F6F19C /* Runtime.h */,
 				DA3F4B6819A9144200F6F19C /* Supporting Files */,
+				DA3F4BAA19A921EF00F6F19C /* Runtime.swift */,
+				DA3F4BB219A92E7600F6F19C /* Message.swift */,
+				DA3F4BB419A932B500F6F19C /* MessageChannel.swift */,
+				DA3F4BB619A9340900F6F19C /* MessageTopic.swift */,
+				DA3F4BB819A934A000F6F19C /* ChannelName.swift */,
+				DA3F4BBA19A9391A00F6F19C /* Transport.swift */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -212,6 +242,8 @@
 				DA3F4B8E19A9172E00F6F19C /* Nimble.xcodeproj */,
 				DA3F4B7E19A9171100F6F19C /* Quick.xcodeproj */,
 				DA3F4B7219A9144200F6F19C /* Supporting Files */,
+				DA3F4BBE19A93A2200F6F19C /* RuntimeSpec.swift */,
+				DAEDCE0819AAEC12008132BB /* FakeTransport.swift */,
 			);
 			path = RuntimeTests;
 			sourceTree = "<group>";
@@ -530,6 +562,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3BB48219AC371C0022BDBA /* Runtime.swift in Sources */,
+				DA3BB48319AC371C0022BDBA /* Message.swift in Sources */,
+				DA3BB48419AC371C0022BDBA /* MessageChannel.swift in Sources */,
+				DA3BB48519AC371C0022BDBA /* MessageTopic.swift in Sources */,
+				DA3BB48619AC371C0022BDBA /* ChannelName.swift in Sources */,
+				DA3BB48719AC371C0022BDBA /* Transport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +575,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3BB49519AC37230022BDBA /* RuntimeSpec.swift in Sources */,
+				DA3BB49719AC37230022BDBA /* FakeTransport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +584,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3BB49819AC37290022BDBA /* Runtime.swift in Sources */,
+				DA3BB49919AC37290022BDBA /* Message.swift in Sources */,
+				DA3BB49A19AC37290022BDBA /* MessageChannel.swift in Sources */,
+				DA3BB49B19AC37290022BDBA /* MessageTopic.swift in Sources */,
+				DA3BB49C19AC37290022BDBA /* ChannelName.swift in Sources */,
+				DA3BB49D19AC37290022BDBA /* Transport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +597,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3BB49F19AC372F0022BDBA /* RuntimeSpec.swift in Sources */,
+				DA3BB4A119AC372F0022BDBA /* FakeTransport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
