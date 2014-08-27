@@ -87,7 +87,7 @@ struct RuntimeChannel: MessageChannel {
             "version": 0.4,
             "capabilities": [],
             "id": "FIXME",
-            "label": "Flow-based programming for Mac and iOS.",
+            "label": "Flow-based programming on Mac and iOS.",
             "graph": nil
         ]
         
