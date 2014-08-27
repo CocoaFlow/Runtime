@@ -30,6 +30,7 @@
 		DA3F4B6B19A9144200F6F19C /* Runtime.h in Headers */ = {isa = PBXBuildFile; fileRef = DA3F4B6A19A9144200F6F19C /* Runtime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA3F4B9D19A9175C00F6F19C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3F4B9A19A9172F00F6F19C /* Nimble.framework */; };
 		DA3F4B9E19A9175C00F6F19C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3F4B8719A9171200F6F19C /* Quick.framework */; };
+		DADA67EB19AD85A90062316A /* Runtime.h in Headers */ = {isa = PBXBuildFile; fileRef = DA3F4B6A19A9144200F6F19C /* Runtime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAEDCDDD19AAD88D008132BB /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3F4B9619A9172F00F6F19C /* Nimble.framework */; };
 		DAEDCDDE19AAD88D008132BB /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3F4B8719A9171200F6F19C /* Quick.framework */; };
 		DAFF398F19AC2D68006C69A2 /* JSONLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFF398019AC2CEA006C69A2 /* JSONLib.framework */; };
@@ -312,6 +313,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADA67EB19AD85A90062316A /* Runtime.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
