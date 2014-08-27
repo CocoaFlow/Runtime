@@ -8,6 +8,7 @@
 
 import JSONLib
 
+//struct Message<T: MessageChannel, U: MessageTopic where T.Topic == U/*, U.Channel == T*/> {
 struct Message<T: MessageChannel, U: MessageTopic where T.Topic == U> {
     
     let channel: T

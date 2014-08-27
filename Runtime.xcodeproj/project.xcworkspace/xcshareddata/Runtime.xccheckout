@@ -10,6 +10,8 @@
 	<string>Runtime</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>0E6D588E82EE0418D596FCECF2796F44FE2B655B</key>
+		<string>github.com:CocoaFlow/Transport.git</string>
 		<key>35A40EC5875E6BF6416EF9701F512A5C5A9C92DF</key>
 		<string>github.com:CocoaFlow/Runtime.git</string>
 		<key>4EC9242325463947345742C074D276FC6778FE31</key>
@@ -23,6 +25,8 @@
 	<string>Runtime.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>0E6D588E82EE0418D596FCECF2796F44FE2B655B</key>
+		<string>../..External/Transport/</string>
 		<key>35A40EC5875E6BF6416EF9701F512A5C5A9C92DF</key>
 		<string>../..</string>
 		<key>4EC9242325463947345742C074D276FC6778FE31</key>
@@ -71,6 +75,14 @@
 			<string>35A40EC5875E6BF6416EF9701F512A5C5A9C92DF</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Runtime</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0E6D588E82EE0418D596FCECF2796F44FE2B655B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Transport</string>
 		</dict>
 	</array>
 </dict>

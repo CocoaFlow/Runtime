@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import Transport
 import JSONLib
 
+//public struct Runtime { // FIXME: Use a class as a workaround for the circular dependency issue in init
 final public class Runtime {
 
     let transport: Transport!
@@ -39,6 +41,7 @@ final public class Runtime {
         :param: payload
     */
     public func receive(channel: String, _ topic: String, _ payload: JSON) {
+        // TODO: Clean this up. See: http://natashatherobot.com/swift-unwrap-multiple-optionals/
         if let maybeChannel = ChannelName.fromRaw(channel) {
             switch maybeChannel {
             case .Runtime:

@@ -7,3 +7,6 @@
 [submodule "External/json-swift"]
 	path = External/json-swift
 	url = git@github.com:owensd/json-swift.git
+[submodule "External/Transport"]
+	path = External/Transport
+	url = git@github.com:CocoaFlow/Transport.git

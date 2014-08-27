@@ -8,6 +8,7 @@
 
 protocol MessageTopic: RawRepresentable {
     
+//    typealias Channel: MessageChannel  // FIXME - causes crash
     class func fromRaw(raw: String) -> Self?
     func toRaw() -> String
 }

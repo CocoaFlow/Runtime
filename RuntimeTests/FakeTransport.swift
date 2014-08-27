@@ -7,6 +7,7 @@
 //
 
 import Runtime
+import Transport
 import JSONLib
 
 struct FakeTransport: Transport {
