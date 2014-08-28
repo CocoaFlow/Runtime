@@ -33,8 +33,6 @@
 		DADA681D19AD8B8E0062316A /* Transport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADA681519AD8B370062316A /* Transport.framework */; };
 		DAEDCDDD19AAD88D008132BB /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3F4B9619A9172F00F6F19C /* Nimble.framework */; };
 		DAEDCDDE19AAD88D008132BB /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3F4B8719A9171200F6F19C /* Quick.framework */; };
-		DAFF398F19AC2D68006C69A2 /* JSONLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFF398019AC2CEA006C69A2 /* JSONLib.framework */; };
-		DAFF399019AC2D74006C69A2 /* JSONLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFF398019AC2CEA006C69A2 /* JSONLib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,34 +134,6 @@
 			remoteGlobalIDString = DAEDCDB419AAD40C008132BB;
 			remoteInfo = "Runtime-iOS";
 		};
-		DAFF397F19AC2CEA006C69A2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DAFF397819AC2CEA006C69A2 /* JSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7D7BD7C2195418CB00AC2E4E;
-			remoteInfo = "JSON-OSX";
-		};
-		DAFF398119AC2CEA006C69A2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DAFF397819AC2CEA006C69A2 /* JSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7D7BD7CD195418CC00AC2E4E;
-			remoteInfo = "JSON-OSXTests";
-		};
-		DAFF398319AC2CEA006C69A2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DAFF397819AC2CEA006C69A2 /* JSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7D1E362F199478A600856119;
-			remoteInfo = "JSON-iOS";
-		};
-		DAFF398519AC2CEA006C69A2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DAFF397819AC2CEA006C69A2 /* JSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7D1E3639199478A600856119;
-			remoteInfo = "JSON-iOSTests";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -186,7 +156,6 @@
 		DAEDCDBF19AAD40C008132BB /* Runtime-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Runtime-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAEDCE0519AAEB5F008132BB /* RuntimeChannelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuntimeChannelSpec.swift; sourceTree = "<group>"; };
 		DAEDCE0819AAEC12008132BB /* FakeTransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeTransport.swift; sourceTree = "<group>"; };
-		DAFF397819AC2CEA006C69A2 /* JSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSON.xcodeproj; path = "External/json-swift/JSON.xcodeproj"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,7 +164,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DADA681C19AD8B880062316A /* Transport.framework in Frameworks */,
-				DAFF399019AC2D74006C69A2 /* JSONLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +181,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DADA681D19AD8B8E0062316A /* Transport.framework in Frameworks */,
-				DAFF398F19AC2D68006C69A2 /* JSONLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +220,6 @@
 			isa = PBXGroup;
 			children = (
 				DADA680C19AD8B360062316A /* Transport.xcodeproj */,
-				DAFF397819AC2CEA006C69A2 /* JSON.xcodeproj */,
 				DA3F4B6A19A9144200F6F19C /* Runtime.h */,
 				DA3F4B6819A9144200F6F19C /* Supporting Files */,
 				DA3F4BAA19A921EF00F6F19C /* Runtime.swift */,
@@ -324,17 +290,6 @@
 				DADA681719AD8B370062316A /* TransportTests.xctest */,
 				DADA681919AD8B370062316A /* Transport.framework */,
 				DADA681B19AD8B370062316A /* TransportTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		DAFF397919AC2CEA006C69A2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DAFF398019AC2CEA006C69A2 /* JSONLib.framework */,
-				DAFF398219AC2CEA006C69A2 /* JSON-OSXTests.xctest */,
-				DAFF398419AC2CEA006C69A2 /* JSONLib.framework */,
-				DAFF398619AC2CEA006C69A2 /* JSON-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -468,10 +423,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = DAFF397919AC2CEA006C69A2 /* Products */;
-					ProjectRef = DAFF397819AC2CEA006C69A2 /* JSON.xcodeproj */;
-				},
-				{
 					ProductGroup = DA3F4B8F19A9172E00F6F19C /* Products */;
 					ProjectRef = DA3F4B8E19A9172E00F6F19C /* Nimble.xcodeproj */;
 				},
@@ -561,7 +512,6 @@
 		DADA681719AD8B370062316A /* TransportTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			name = TransportTests.xctest;
 			path = "Transport-MacTests.xctest";
 			remoteRef = DADA681619AD8B370062316A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -576,37 +526,8 @@
 		DADA681B19AD8B370062316A /* TransportTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			name = TransportTests.xctest;
 			path = "Transport-iOSTests.xctest";
 			remoteRef = DADA681A19AD8B370062316A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DAFF398019AC2CEA006C69A2 /* JSONLib.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = JSONLib.framework;
-			remoteRef = DAFF397F19AC2CEA006C69A2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DAFF398219AC2CEA006C69A2 /* JSON-OSXTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "JSON-OSXTests.xctest";
-			remoteRef = DAFF398119AC2CEA006C69A2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DAFF398419AC2CEA006C69A2 /* JSONLib.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = JSONLib.framework;
-			remoteRef = DAFF398319AC2CEA006C69A2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DAFF398619AC2CEA006C69A2 /* JSON-iOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "JSON-iOSTests.xctest";
-			remoteRef = DAFF398519AC2CEA006C69A2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
