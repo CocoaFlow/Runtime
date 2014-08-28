@@ -14,7 +14,7 @@ struct FakeTransport: Transport {
     
     typealias Verification = (channel: String, topic: String, payload: JSON) -> Void
     
-    private var verify: Verification
+    private let verify: Verification
     
     init(_ verify: Verification = { (channel, topic, payload) in }) {
         self.verify = verify
