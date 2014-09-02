@@ -10,7 +10,6 @@ import Foundation
 import Transport
 import JSONLib
 
-//public struct Runtime { // FIXME: Use a class as a workaround for the circular dependency issue in init
 final public class Runtime {
 
     private let transport: Transport!
