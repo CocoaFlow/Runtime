@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 CocoaFlow. All rights reserved.
 //
 
+import Foundation
 import Quick
 import Nimble
 import Runtime

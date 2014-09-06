@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 CocoaFlow. All rights reserved.
 //
 
+import Foundation
+
 enum ChannelName: String {
     case Runtime = "runtime"
     case Graph = "graph"

@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 CocoaFlow. All rights reserved.
 //
 
+import Foundation
+
 protocol MessageTopic: RawRepresentable {
     
 //    typealias Channel: MessageChannel  // FIXME - causes crash
