@@ -7,33 +7,40 @@
 //
 
 import Foundation
-import Transport
+import MessageTransfer
 import JSONLib
 
-final public class Runtime {
+final public class Runtime: MessageReceiverWithSender {
 
-    private let transport: Transport!
     private let runtime: RuntimeChannel!
+    public var messageSender: MessageSender?
     
-     public init(_ transport: Transport) {
-        self.transport = transport
+     public init(_ messageSender: MessageSenderWithReceiver?) {
+        if var sender = messageSender {
+            self.messageSender = sender
+            sender.messageReceiver = self
+        }
+
         self.runtime = RuntimeChannel(self)
     }
     
     /**
-        Send a message to the transport.
+        Send a message.
     
         :param: message
     */
     func send<T: MessageChannel, U: MessageTopic where T.Topic == U>(message: Message<T, U>) {
-        let channel = message.channel.name.toRaw()
-        let topic = message.topic.toRaw()
-        let payload = message.payload
-        self.transport.send(channel, topic, payload)
+        if let sender = self.messageSender {
+            let channel = message.channel.name.toRaw()
+            let topic = message.topic.toRaw()
+            let payload = message.payload
+            
+            sender.send(channel, topic, payload)
+        }
     }
     
     /**
-        Receive a message from the transport.
+        Receive a message.
 
         :param: channel
         :param: topic
