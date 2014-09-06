@@ -36,7 +36,7 @@
 		<key>95438028B10BBB846574013D29F154A00556A9D1</key>
 		<string>../..External/Nimble</string>
 		<key>A23DD660B48D5EAEF2CD0DE44787EA50F09DD13C</key>
-		<string>../../External/MessageTransfer/</string>
+		<string>../../External/MessageTransfer</string>
 		<key>D0725CAC6FF2D66F2C83C2C48DC12106D42DAA64</key>
 		<string>../..External/Quick</string>
 	</dict>
