@@ -4,6 +4,3 @@
 [submodule "External/Nimble"]
 	path = External/Nimble
 	url = git@github.com:Quick/Nimble.git
-[submodule "External/Transport"]
-	path = External/Transport
-	url = git@github.com:CocoaFlow/Transport.git
