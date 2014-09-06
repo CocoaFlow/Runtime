@@ -22,8 +22,8 @@ class RuntimeSpec: QuickSpec {
                 context("on an invalid channel") {
                     
                     it("should raise an exception") {
-                        let transport = FakeTransport()
-                        let runtime = Runtime(transport)
+                        let fakeMessageSender = FakeMessageSender()
+                        let runtime = Runtime(fakeMessageSender)
                         
                         expect {
                             runtime.receive("invalid", "_", [:])

@@ -22,8 +22,8 @@ class RuntimeChannelSpec: QuickSpec {
                 context("with an invalid topic") {
                         
                     it("should raise an exception") {
-                        let transport = FakeTransport()
-                        let runtime = Runtime(transport)
+                        let fakeMessageSender = FakeMessageSender()
+                        let runtime = Runtime(fakeMessageSender)
                         
                         expect {
                             runtime.receive("runtime", "invalid", [:])
@@ -38,13 +38,13 @@ class RuntimeChannelSpec: QuickSpec {
                         var messageTopic: String!
                         var messagePayload: JSON!
                         
-                        let transport = FakeTransport { (channel, topic, payload) in
+                        let fakeMessageSender = FakeMessageSender { (channel, topic, payload) in
                             messageChannel = channel
                             messageTopic = topic
                             messagePayload = payload
                         }
                         
-                        let runtime = Runtime(transport)
+                        let runtime = Runtime(fakeMessageSender)
                         runtime.receive("runtime", "getruntime", [:])
                         
                         let expectedPayload: JSON = [
