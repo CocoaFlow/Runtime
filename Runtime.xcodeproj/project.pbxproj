@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA0D057619BAB20B00E5CE6A /* FakeMessageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0D057519BAB20B00E5CE6A /* FakeMessageSender.swift */; };
+		DA0D057719BAB20B00E5CE6A /* FakeMessageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0D057519BAB20B00E5CE6A /* FakeMessageSender.swift */; };
 		DA3BB48219AC371C0022BDBA /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4BAA19A921EF00F6F19C /* Runtime.swift */; };
 		DA3BB48319AC371C0022BDBA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4BB219A92E7600F6F19C /* Message.swift */; };
 		DA3BB48419AC371C0022BDBA /* MessageChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4BB419A932B500F6F19C /* MessageChannel.swift */; };
@@ -15,7 +17,6 @@
 		DA3BB48819AC371C0022BDBA /* RuntimeChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA519D3219A9BFA200C9AA95 /* RuntimeChannel.swift */; };
 		DA3BB49519AC37230022BDBA /* RuntimeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4BBE19A93A2200F6F19C /* RuntimeSpec.swift */; };
 		DA3BB49619AC37230022BDBA /* RuntimeChannelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDCE0519AAEB5F008132BB /* RuntimeChannelSpec.swift */; };
-		DA3BB49719AC37230022BDBA /* FakeTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDCE0819AAEC12008132BB /* FakeTransport.swift */; };
 		DA3BB49819AC37290022BDBA /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4BAA19A921EF00F6F19C /* Runtime.swift */; };
 		DA3BB49919AC37290022BDBA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4BB219A92E7600F6F19C /* Message.swift */; };
 		DA3BB49A19AC37290022BDBA /* MessageChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4BB419A932B500F6F19C /* MessageChannel.swift */; };
@@ -24,7 +25,6 @@
 		DA3BB49E19AC37290022BDBA /* RuntimeChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA519D3219A9BFA200C9AA95 /* RuntimeChannel.swift */; };
 		DA3BB49F19AC372F0022BDBA /* RuntimeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F4BBE19A93A2200F6F19C /* RuntimeSpec.swift */; };
 		DA3BB4A019AC372F0022BDBA /* RuntimeChannelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDCE0519AAEB5F008132BB /* RuntimeChannelSpec.swift */; };
-		DA3BB4A119AC372F0022BDBA /* FakeTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDCE0819AAEC12008132BB /* FakeTransport.swift */; };
 		DA3F4B6B19A9144200F6F19C /* Runtime.h in Headers */ = {isa = PBXBuildFile; fileRef = DA3F4B6A19A9144200F6F19C /* Runtime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA3F4B9D19A9175C00F6F19C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3F4B9A19A9172F00F6F19C /* Nimble.framework */; };
 		DA3F4B9E19A9175C00F6F19C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3F4B8719A9171200F6F19C /* Quick.framework */; };
@@ -137,6 +137,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA0D057519BAB20B00E5CE6A /* FakeMessageSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeMessageSender.swift; sourceTree = "<group>"; };
 		DA3F4B6519A9144200F6F19C /* Runtime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Runtime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3F4B6919A9144200F6F19C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA3F4B6A19A9144200F6F19C /* Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Runtime.h; sourceTree = "<group>"; };
@@ -155,7 +156,6 @@
 		DAEDCDB519AAD40C008132BB /* Runtime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Runtime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAEDCDBF19AAD40C008132BB /* Runtime-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Runtime-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAEDCE0519AAEB5F008132BB /* RuntimeChannelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuntimeChannelSpec.swift; sourceTree = "<group>"; };
-		DAEDCE0819AAEC12008132BB /* FakeTransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeTransport.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,7 +248,7 @@
 				DA3F4B7219A9144200F6F19C /* Supporting Files */,
 				DA3F4BBE19A93A2200F6F19C /* RuntimeSpec.swift */,
 				DAEDCE0519AAEB5F008132BB /* RuntimeChannelSpec.swift */,
-				DAEDCE0819AAEC12008132BB /* FakeTransport.swift */,
+				DA0D057519BAB20B00E5CE6A /* FakeMessageSender.swift */,
 			);
 			path = RuntimeTests;
 			sourceTree = "<group>";
@@ -583,7 +583,7 @@
 			files = (
 				DA3BB49519AC37230022BDBA /* RuntimeSpec.swift in Sources */,
 				DA3BB49619AC37230022BDBA /* RuntimeChannelSpec.swift in Sources */,
-				DA3BB49719AC37230022BDBA /* FakeTransport.swift in Sources */,
+				DA0D057619BAB20B00E5CE6A /* FakeMessageSender.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,7 +606,7 @@
 			files = (
 				DA3BB49F19AC372F0022BDBA /* RuntimeSpec.swift in Sources */,
 				DA3BB4A019AC372F0022BDBA /* RuntimeChannelSpec.swift in Sources */,
-				DA3BB4A119AC372F0022BDBA /* FakeTransport.swift in Sources */,
+				DA0D057719BAB20B00E5CE6A /* FakeMessageSender.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

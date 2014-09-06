@@ -1,20 +1,21 @@
 //
-//  FakeTransport.swift
+//  FakeMessageSender.swift
 //  Runtime
 //
-//  Created by Paul Young on 24/08/2014.
+//  Created by Paul Young on 05/09/2014.
 //  Copyright (c) 2014 CocoaFlow. All rights reserved.
 //
 
-import Runtime
-import Transport
+import Foundation
+import MessageTransfer
 import JSONLib
 
-struct FakeTransport: Transport {
+struct FakeMessageSender: MessageSenderWithReceiver {
     
     typealias Verification = (channel: String, topic: String, payload: JSON) -> Void
     
     private let verify: Verification
+    var messageReceiver: MessageReceiver?
     
     init(_ verify: Verification = { (channel, topic, payload) in }) {
         self.verify = verify
