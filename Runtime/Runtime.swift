@@ -46,13 +46,13 @@ final public class Runtime: MessageReceiverWithSender {
         :param: topic
         :param: payload
     */
-    public func receive(channel: String, _ topic: String, _ payload: JSON) {
+    public func receive(channel: String, _ topic: String, _ payload: JSON?) {
         // TODO: Clean this up. See: http://natashatherobot.com/swift-unwrap-multiple-optionals/
         if let maybeChannel = ChannelName.fromRaw(channel) {
             switch maybeChannel {
             case .Runtime:
                 if let maybeTopic = RuntimeChannel.Topic.fromRaw(topic) {
-                    let message = Message(self.runtime, maybeTopic, [:])
+                    let message = Message(self.runtime, maybeTopic, nil)
                     self.runtime.receive(message)
                 } else {
                     NSException(name: "Invalid topic in message on runtime channel", reason: nil, userInfo: nil).raise()
