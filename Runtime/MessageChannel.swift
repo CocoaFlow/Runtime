@@ -17,6 +17,6 @@ protocol MessageChannel {
     var name: ChannelName { get }
     typealias Topic: MessageTopic
     
-    func send(topic: Topic, _ payload: JSON)
+    func send(topic: Topic, _ payload: JSON?)
     func receive(message: Message<Self, Topic>)
 }
