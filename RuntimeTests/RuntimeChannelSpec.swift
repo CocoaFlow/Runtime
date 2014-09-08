@@ -37,7 +37,7 @@ class RuntimeChannelSpec: QuickSpec {
                     it("should send a message to the transport with information about the runtime") {
                         var messageChannel: String!
                         var messageTopic: String!
-                        var messagePayload: JSON!
+                        var messagePayload: JSON?
                         
                         let fakeMessageSender = FakeMessageSender { (channel, topic, payload) in
                             messageChannel = channel
@@ -46,7 +46,7 @@ class RuntimeChannelSpec: QuickSpec {
                         }
                         
                         let runtime = Runtime(fakeMessageSender)
-                        runtime.receive("runtime", "getruntime", [:])
+                        runtime.receive("runtime", "getruntime", nil)
                         
                         let expectedPayload: JSON = [
                             "type": "CocoaFlow",
