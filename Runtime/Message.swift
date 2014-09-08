@@ -14,9 +14,9 @@ struct Message<T: MessageChannel, U: MessageTopic where T.Topic == U> {
     
     let channel: T
     let topic: U
-    let payload: JSON
+    let payload: JSON?
     
-    init(_ channel: T, _ topic: U, _ payload: JSON) {
+    init(_ channel: T, _ topic: U, _ payload: JSON?) {
         self.channel = channel
         self.topic = topic
         self.payload = payload
