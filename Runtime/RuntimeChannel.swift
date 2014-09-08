@@ -48,7 +48,7 @@ struct RuntimeChannel: MessageChannel {
         case NetworkPersist = "network:persist"
     }
     
-    func send(topic: RuntimeChannel.Topic, _ payload: JSON) {
+    func send(topic: RuntimeChannel.Topic, _ payload: JSON?) {
         let message = Message(self, topic, payload)
         self.runtime.send(message)
     }
